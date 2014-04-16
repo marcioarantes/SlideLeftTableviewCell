@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Slidelefttableviewcell by marcioarantes</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/marcioarantes/SlideLeftTableviewCell">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Slidelefttableviewcell</h1>
+            <h2>Easy-to-use UITableViewCell subclass that implements a swipe to reveal action buttons for each cell</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/marcioarantes/SlideLeftTableviewCell/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/marcioarantes/SlideLeftTableviewCell/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a name="slidelefttableviewcell" class="anchor" href="#slidelefttableviewcell"><span class="octicon octicon-link"></span></a>SlideLeftTableviewCell</h1>
+
+<h1></h1>
+
+<p>SlideLeftTableviewCell is an easy-to-use UITableViewCell subclass that implements a swipe to reveal action on each cell. When you swipe left it exposes utility buttons that you can use to call an action (like the Mail app). I have used similar tools in the past and thought all of them were a bit overkill for what most people need, with SlideLeftTableviewCell there is only one delegate method and you can create as many buttons as you wish with custom titles, width and background color independently of each other.</p>
+
+<h1>
+<a name="functionality" class="anchor" href="#functionality"><span class="octicon octicon-link"></span></a>Functionality:</h1>
+
+<ol>
+<li>In your header file import the SlideLeftTableviewCell.h</li>
+<li>Make sure your class conforms to the SlideLeftTableviewCellDelegate protocol</li>
+<li>In your implementation file, create your SlideLeftTableviewCell. To make it easier I’ve created a convenience initializer. <em>Note: make sure you set the cell’s delegate</em>
+</li>
+<li>Each button is a dictionary stored in an array, you will need a title for each button and optionally you may also specify the background color and width independently. Unlike most tools, SlideTableviewCell allows you to change the size of your buttons to fit your needs. <em>(see sample code)</em>
+</li>
+<li>Finally use the slideLeftDidPushButtonAtIndex delegate method to implement your actions.</li>
+</ol><h1>
+<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact:</h1>
+
+<p>Marcio Arantes
+<a href="mailto:marcioarantes220@gmail.com">marcioarantes220@gmail.com</a></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/marcioarantes">marcioarantes</a> can be found on <a href="https://github.com/marcioarantes/SlideLeftTableviewCell">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
